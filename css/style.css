@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Sono', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+.text-h1,
+.text-h2,
+.text-h3,
+.text-p,
+.tag {
+    letter-spacing: -0.03em;
+}
+.text-nav {
+    font-size: 20px;
+    line-height: 27px;
+}
+.text-h1 {
+    font-size: 80px;
+    line-height: 70px;
+}
+.text-h2 {
+    font-size: 55px;
+    line-height: 72px;
+}
+.text-h3 {
+    font-size: 35px;
+    line-height: 46px;
+}
+.text-p {
+    font-size: 22px;
+    line-height: 29px;
+}
+:root {
+    --accent-color: #ff25c2;
+    --dark-color: #191c19;
+}
+button {
+    font-family: 'Sono', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
