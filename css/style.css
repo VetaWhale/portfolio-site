@@ -1,52 +1,126 @@
+/* Основные настройки стилей */
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    font-family: 'Sono', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-style: normal;
     font-weight: 400;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 .text-h1,
 .text-h2,
 .text-h3,
-.text-p,
-.tag {
+.text-p {
     letter-spacing: -0.03em;
 }
+
 .text-nav {
     font-size: 20px;
     line-height: 27px;
+    text-transform: lowercase;
 }
+
 .text-h1 {
     font-size: 80px;
     line-height: 70px;
 }
+
 .text-h2 {
     font-size: 55px;
     line-height: 72px;
 }
+
 .text-h3 {
     font-size: 35px;
     line-height: 46px;
 }
+
 .text-p {
     font-size: 22px;
     line-height: 29px;
 }
+
 :root {
     --accent-color: #ff25c2;
     --dark-color: #191c19;
 }
+
 button {
     font-family: 'Sono', sans-serif;
     font-style: normal;
     font-weight: 400;
     letter-spacing: -0.03em;
 }
+
 .container {
     width: 1150px;
     margin: 0 auto;
+}
+
+/* Стили для шапки сайта */
+.header {
+    background-image: url(../materials/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 765px;
+}
+
+.menu {
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__logo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 55px;
+    letter-spacing: -0.11em;
+    text-transform: uppercase;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: 0 12px;
+}
+
+.menu__logo a {
+    color: var(--accent-color);
+
+}
+
+.menu__nav a {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.menu__nav a:first-child {
+    margin-left: 0;
+}
+
+.menu__nav a:hover {
+    color: var(--accent-color);
+}
+
+.info {
+    margin-top: 252px;
+}
+
+.info__text-content {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.info__text-title {
+    margin-top: 29px;
+    color: var(--accent-color);
 }
