@@ -55,7 +55,7 @@ a {
 }
 
 button {
-    font-family: 'Sono', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-style: normal;
     font-weight: 400;
     letter-spacing: -0.03em;
@@ -122,5 +122,61 @@ button {
 
 .info__text-title {
     margin-top: 29px;
+    color: var(--accent-color);
+}
+
+/* Стили для секции портфолио*/
+.portfolio {
+    padding-top: 150px;
+}
+
+.portfolio__cards {
+    margin-top: 40px;
+}
+
+.portfolio-card {}
+
+.portfolio-card__metrica {
+    height: 550px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../materials/portfolio-metrica.png);
+    border-radius: 30px;
+}
+
+.portfolio-card__splice {
+    height: 550px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../materials/portfolio-splice.png);
+    border-radius: 30px;
+}
+
+.portfolio-card__qubit {
+    height: 550px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../materials/portfolio-qubit.png);
+    border-radius: 30px;
+}
+
+.portfolio-card__text-title {
+    padding-top: 410px;
+    margin-left: 50px;
+}
+
+.portfolio-card__text-content {
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: lowercase;
+}
+
+.portfolio-card__button {
+    font-size: 30px;
+    line-height: 39px;
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 57px 85px;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+}
+.portfolio-card__button:hover {
+    background-color: #000;
     color: var(--accent-color);
 }
