@@ -168,6 +168,7 @@ button {
 }
 
 .portfolio-card__button {
+    margin-top: 20px;
     font-size: 30px;
     line-height: 39px;
     background-color: var(--accent-color);
@@ -179,4 +180,31 @@ button {
 .portfolio-card__button:hover {
     background-color: #000;
     color: var(--accent-color);
+}
+
+/* Стили для раздела навыков */
+
+.my-skills {
+    margin: 150px 0;
+}
+.my-skills__cards {
+}
+.my-skills__card:first-child {
+    margin-top: 48px;
+}
+.my-skills__card {
+    margin-top: 70px;
+}
+.my-skills__card_icon {
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.my-skills__card_title-content {
+    margin-top: 16px;
+    color: var(--accent-color);
+
+}
+.my-skills__card_text-content {
+    margin-top: 15px;
 }
