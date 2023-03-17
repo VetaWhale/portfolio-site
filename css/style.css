@@ -157,6 +157,10 @@ button {
 .portfolio-card__text-title {
     padding-top: 410px;
     margin-left: 50px;
+    color: #fff;
+}
+.portfolio-card__text-title:hover {
+    color: var(--accent-color);
 }
 
 .portfolio-card__text-content {
