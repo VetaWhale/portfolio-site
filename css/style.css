@@ -168,12 +168,12 @@ button {
 }
 
 .portfolio-card__button {
-    margin-top: 20px;
+    margin-top: 79px;
     font-size: 30px;
     line-height: 39px;
     background-color: var(--accent-color);
     color: #000;
-    padding: 57px 85px;
+    padding: 57px 118px;
     border: 1px solid var(--accent-color);
     border-radius: 10px;
 }
@@ -184,27 +184,68 @@ button {
 
 /* Стили для раздела навыков */
 
+.container__my-skills {
+    max-width: 778px;
+}
 .my-skills {
     margin: 150px 0;
 }
 .my-skills__cards {
 }
-.my-skills__card:first-child {
+.my-skills__card:nth-child(2) {
     margin-top: 48px;
 }
 .my-skills__card {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 .my-skills__card_icon {
-    background-color: var(--accent-color);
     padding: 10px;
-    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--accent-color);
+    width: 45px;
+    height: 44px;
+    border-radius: 5px;
 }
 .my-skills__card_title-content {
-    margin-top: 16px;
-    color: var(--accent-color);
-
+    margin-top: 13px;
 }
 .my-skills__card_text-content {
-    margin-top: 15px;
+    margin-top: 16px;
 }
+
+/* Стили для раздела услуг*/
+
+.my-services {
+}
+.my-services__cards {
+}
+.my-services__title {
+    margin-bottom: 74px;
+    font-size: 35px;
+    line-height: 46px;
+}
+.my-services__card {
+}
+.my-services__card-img img{
+    border-radius: 30px;
+}
+.my-services__card-content {
+    padding: 40px 0 40px 40px;
+    border: 1px solid #191c19;
+    border-radius: 30px;
+    background-color: #191c19;
+}
+.my-services__card:nth-child(2){
+    margin-bottom: 74px;
+}
+.my-services__card:nth-child(3){
+    margin-bottom: 137px;
+}
+.my-services__card-content_title {
+    color: var(--accent-color);
+}
+.my-services__card-content_text {
+    margin-top: 15px;
+    max-width: 750px;
+}
+
