@@ -220,6 +220,32 @@ button {
 .my-skills__card_title-content {
     margin-top: 13px;
 }
+.my-skills__card_title-content:hover {
+    margin-top: 13px;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.my-skills__card_title-content.open::after,
+.my-skills__card_title-content.close::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../materials/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+}
+.my-skills__card_title-content.close + .my-skills__card_text-content {
+    display: none;
+   
+}
+.my-skills__card_title-content.open::after {
+    transform: none;
+}
+.my-skills__card_title-content.close::after {
+    transform: rotate(180deg);
+}
 
 .my-skills__card_text-content {
     margin-top: 16px;

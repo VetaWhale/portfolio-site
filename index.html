@@ -20,10 +20,10 @@
             <div class="menu">
                 <div class="menu__logo"><a href="/">Elizaveta Shkimbova</a></div>
                 <div class="menu__nav text-nav">
-                    <a href="#">Портфолио</a>
-                    <a href="#">Компетенции</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Контакты</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#my-skills">Компетенции</a>
+                    <a href="#my-services">Услуги</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
             </div>
             <div class="info">
@@ -38,7 +38,7 @@
         </div>
     </header>
     <div class="container">
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2 class="text-h2">Самые свежие проекты</h2>
             <div class="portfolio__cards">
                 <div class="portfolio-card__metrica">
@@ -56,13 +56,13 @@
             </div>
             <button class="portfolio-card__button">Смотреть все проекты</button>
         </section>
-        <section class="my-skills">
+        <section class="my-skills" id="my-skills">
             <div class="container__my-skills">
                 <div class="my-skills__cards">
                     <h2 class="text-h2">Мои компетенции</h2>
                     <div class="my-skills__card">
                         <img src="materials/icon-html.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3">HTML и CSS</h3>
+                        <h3 class="my-skills__card_title-content text-h3 close">HTML и CSS</h3>
                         <p class="my-skills__card_text-content text-p">это основа фронтенд разработки. Умение создавать
                             и правильно структурировать HTML-документы, а
                             также применять стили к этим документам на CSS, является обязательным навыком для каждого
@@ -70,7 +70,7 @@
                     </div>
                     <div class="my-skills__card">
                         <img src="materials/icon-js.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3">JavaScript</h3>
+                        <h3 class="my-skills__card_title-content text-h3 close">JavaScript</h3>
                         <p class="my-skills__card_text-content text-p">это язык программирования, который используется
                             для создания динамического и интерактивного
                             пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами
@@ -79,7 +79,7 @@
                     </div>
                     <div class="my-skills__card">
                         <img src="materials/icon-mob.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3">Работа с библиотеками и фреймворками</h3>
+                        <h3 class="my-skills__card_title-content text-h3 close">Работа с библиотеками и фреймворками</h3>
                         <p class="my-skills__card_text-content text-p">фронтенд разработчики должны быть знакомы с
                             различными библиотеками и фреймворками, такими как
                             React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под
@@ -88,7 +88,7 @@
                     </div>
                     <div class="my-skills__card">
                         <img src="materials/icon-frame.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3">Разработка для мобильных <br> устройств и
+                        <h3 class="my-skills__card_title-content text-h3 close">Разработка для мобильных <br> устройств и
                             адаптивная верстка</h3>
                         <p class="my-skills__card_text-content text-p">фронтенд разработчики должны быть знакомы с
                             различными библиотеками и фреймворками, такими как
@@ -99,11 +99,11 @@
                 </div>
             </div>
         </section>
-        <section class="my-services">
+        <section class="my-services" id="my-services">
             <div class="my-services__cards">
                 <h2 class="my-services__title">Помогаю реализовать <br> широкий спектр задач</h2>
                 <div class="my-services__card">
-                    <div class="my-services__card-img"><img src="materials/services1.jpg" alt=""></div>
+                    <div class="my-services__card-img"><img src="materials/services1.jpg" alt="Разработа сайта под ключ"></div>
                     <div class="my-services__card-content">
                         <h2 class="my-services__card-content_title text-h2">Разработка сайта под ключ</h2>
                         <p class="my-services__card-content_text text-p">Это создание дизайн веб-сайтов, созданный для
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="my-services__card">
-                    <div class="my-services__card-img"><img src="materials/services2.jpg" alt=""></div>
+                    <div class="my-services__card-img"><img src="materials/services2.jpg" alt="Верстка сайтов"></div>
                     <div class="my-services__card-content">
                         <h2 class="my-services__card-content_title text-h2">Верстка сайтов</h2>
                         <p class="my-services__card-content_text text-p">Это процесс создания HTML-документов и
@@ -122,7 +122,7 @@
                     </div>
                 </div>
                 <div class="my-services__card">
-                    <div class="my-services__card-img"><img src="materials/services3.jpg" alt=""></div>
+                    <div class="my-services__card-img"><img src="materials/services3.jpg" alt="Разработка мобильного интерфейса"></div>
                     <div class="my-services__card-content">
                         <h2 class="my-services__card-content_title text-h2">Разработка мобильного интерфейса</h2>
                         <p class="my-services__card-content_text text-p">Это процесс создания интерактивных элементов на
@@ -135,7 +135,7 @@
         </section>
     </div>
     <div class="container-full">
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <h2 class="contacts__title">для связи:</h2>
                 <div class="contacts__sns"><a href="https://instagram.com/vetawhale?igshid=ZDdkNTZiNTM="><img
@@ -153,7 +153,7 @@
             </div>
     </div>
     </footer>
-
+<script src="index.js"></script>
 </body>
 
 </html>
