@@ -1,0 +1,90 @@
+/* Стили для раздела футера */
+.footer {
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    font-family: 'Manrope', sans-serif;
+}
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__text {
+    font-size: 22px;
+    line-height: 30px;
+    color: #000;
+}
+.footer__copyright-content {
+    margin-top: 68px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000;
+    opacity: 0.5;
+}
+.footer__contacts {
+    padding-top: 76px;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__content {
+    display: flex;
+    gap: 24px;
+}
+.contacts__sns a{
+    color: #000;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: lowercase;
+}
+.contacts__sns a:hover {
+    color: var(--accent-color);
+}
+.contacts__text {
+    margin-top: 68px;
+    padding-bottom: 20px;
+    color: #000;
+    opacity: 0.5;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/* Адаптив для блока футер */
+
+@media only screen and (max-width: 1199px) {
+    .contacts__content {
+        gap: 14px;
+    }
+    .footer__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .contacts__sns a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    .footer {
+        border-radius: 0;
+    }
+    .footer__contacts {
+        padding-top: 47px;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    .footer__copyright {
+        margin-top: 40px;
+        flex-direction: column;
+        column-gap: 14px;
+    }
+    .footer__copyright-content {
+        margin-top: 0;
+    }
+    .contacts__text {
+        margin-top: 0;
+    }
+    .footer__text {
+        max-width: 200px;
+    }
+}

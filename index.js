@@ -11,3 +11,17 @@ for(let element of elements) {
         }
     }
 }
+const cells = document.querySelectorAll('.portfolio-card');
+const button = document.querySelector('.portfolio-card__button')
+
+    for(let cell of cells) {
+        button.addEventListener('click', function() {
+                if (cell.classList.contains('close')) {
+                    cell.classList.remove('close')
+                    button.innerHTML = "Скрыть";
+                } else {
+                    cell.classList.add('close')
+                    button.innerHTML = "Смотреть все проекты"
+                }
+            });
+        }

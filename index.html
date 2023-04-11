@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="menu">
-                <div class="menu__logo"><a href="/">Elizaveta Shkimbova</a></div>
+                <div class="menu__logo"><a href="/">Elizaveta <br> Shkimbova</a></div>
                 <div class="menu__nav text-nav">
                     <a href="#portfolio">Портфолио</a>
                     <a href="#my-skills">Компетенции</a>
@@ -41,16 +41,29 @@
         <section class="portfolio" id="portfolio">
             <h2 class="text-h2">Самые свежие проекты</h2>
             <div class="portfolio__cards">
-                <div class="portfolio-card__metrica">
+                <div class="portfolio-card">
+                    <p class="portfolio-card__subtitle">дизайн интерьера</p>
                     <a href="https://vetawhale.github.io/Metrica/"><h3 class="portfolio-card__text-title text-h3">Metrica</h3></a>
                     <p class="portfolio-card__text-content">Дизайн, верстка</p>
                 </div>
-                <div class="portfolio-card__splice">
+                <div class="portfolio-card">
+                    <p class="portfolio-card__subtitle">библиотека сэмплов</p>
                     <a href="https://vetawhale.github.io/Splice/"><h3 class="portfolio-card__text-title text-h3">Splice</h3></a>
                     <p class="portfolio-card__text-content">Дизайн, верстка</p>
                 </div>
-                <div class="portfolio-card__qubit">
+                <div class="portfolio-card">
+                    <p class="portfolio-card__subtitle">платформа по работе с личным брендом</p>
                     <a href="https://vetawhale.github.io/website-test-1/"><h3 class="portfolio-card__text-title text-h3">Qubit</h3></a>
+                    <p class="portfolio-card__text-content">Дизайн, верстка</p>
+                </div>
+                <div class="portfolio-card close">
+                    <p class="portfolio-card__subtitle"></p>
+                    <a href="https://vetawhale.github.io/website-test-1/"><h3 class="portfolio-card__text-title text-h3">Realhome</h3></a>
+                    <p class="portfolio-card__text-content">Дизайн, верстка</p>
+                </div>
+                <div class="portfolio-card close">
+                    <p class="portfolio-card__subtitle"></p>
+                    <a href="https://vetawhale.github.io/website-test-1/"><h3 class="portfolio-card__text-title text-h3">Glass</h3></a>
                     <p class="portfolio-card__text-content">Дизайн, верстка</p>
                 </div>
             </div>
@@ -58,11 +71,11 @@
         </section>
         <section class="my-skills" id="my-skills">
             <div class="container__my-skills">
+                <h2 class="text-h2">Мои компетенции</h2>
                 <div class="my-skills__cards">
-                    <h2 class="text-h2">Мои компетенции</h2>
                     <div class="my-skills__card">
                         <img src="materials/icon-html.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3 close">HTML и CSS</h3>
+                        <h3 class="my-skills__card_title-content text-h3">HTML и CSS</h3>
                         <p class="my-skills__card_text-content text-p">это основа фронтенд разработки. Умение создавать
                             и правильно структурировать HTML-документы, а
                             также применять стили к этим документам на CSS, является обязательным навыком для каждого
@@ -70,7 +83,7 @@
                     </div>
                     <div class="my-skills__card">
                         <img src="materials/icon-js.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3 close">JavaScript</h3>
+                        <h3 class="my-skills__card_title-content text-h3">JavaScript</h3>
                         <p class="my-skills__card_text-content text-p">это язык программирования, который используется
                             для создания динамического и интерактивного
                             пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами
@@ -79,7 +92,7 @@
                     </div>
                     <div class="my-skills__card">
                         <img src="materials/icon-mob.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3 close">Работа с библиотеками и фреймворками</h3>
+                        <h3 class="my-skills__card_title-content text-h3">Работа с библиотеками и фреймворками</h3>
                         <p class="my-skills__card_text-content text-p">фронтенд разработчики должны быть знакомы с
                             различными библиотеками и фреймворками, такими как
                             React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под
@@ -88,7 +101,7 @@
                     </div>
                     <div class="my-skills__card">
                         <img src="materials/icon-frame.svg" alt="icon" class="my-skills__card_icon">
-                        <h3 class="my-skills__card_title-content text-h3 close">Разработка для мобильных <br> устройств и
+                        <h3 class="my-skills__card_title-content text-h3">Разработка для мобильных <br> устройств и
                             адаптивная верстка</h3>
                         <p class="my-skills__card_text-content text-p">фронтенд разработчики должны быть знакомы с
                             различными библиотеками и фреймворками, такими как
@@ -103,29 +116,53 @@
             <div class="my-services__cards">
                 <h2 class="my-services__title">Помогаю реализовать <br> широкий спектр задач</h2>
                 <div class="my-services__card">
-                    <div class="my-services__card-img"><img src="materials/services1.jpg" alt="Разработа сайта под ключ"></div>
-                    <div class="my-services__card-content">
-                        <p class="my-services__card-content_title text-h2">Разработка сайта под ключ</p>
-                        <p class="my-services__card-content_text text-p">Это создание дизайн веб-сайтов, созданный для
+                    <div>
+                        <picture>
+                            <sourse
+                                media="(max-width: 500px)"
+                                srcset="materials/services1-mobile.jpg"
+                            />
+                            <img class="my-services__card-img" src="materials/services1.jpg" alt="Верстка сайтов">
+                        </picture>
+                    </div>
+                    <div class="my-services__cards-content">
+                        <p class="my-services__card-content my-services__card-content_title text-h2">Разработка сайта под ключ</p>
+                        <p class="my-services__card-content my-services__card-content_text text-p">Это создание дизайн веб-сайтов, созданный для
                             удобства пользователя и решения бизнес-задач
                             Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь
                             совершит целевое действие</p>
                     </div>
                 </div>
                 <div class="my-services__card">
-                    <div class="my-services__card-img"><img src="materials/services2.jpg" alt="Верстка сайтов"></div>
-                    <div class="my-services__card-content">
-                        <p class="my-services__card-content_title text-h2">Верстка сайтов</p>
-                        <p class="my-services__card-content_text text-p">Это процесс создания HTML-документов и
+                    <div>
+                        <picture>
+                            <sourse
+                                media="(max-width: 500px)"
+                                srcset="materials/services2-mobile.jpg"
+                            />
+                            <img class="my-services__card-img" src="materials/services2.jpg" alt="Верстка сайтов">
+                        </picture>
+                    </div>
+                    <div class="my-services__cards-content">
+                        <p class="my-services__card-content my-services__card-content_title text-h2">Верстка сайтов</p>
+                        <p class="my-services__card-content my-services__card-content_text text-p">Это процесс создания HTML-документов и
                             применения к ним стилей на CSS. Фронтенд разработчик
                             может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
                     </div>
                 </div>
                 <div class="my-services__card">
-                    <div class="my-services__card-img"><img src="materials/services3.jpg" alt="Разработка мобильного интерфейса"></div>
-                    <div class="my-services__card-content">
-                        <p class="my-services__card-content_title text-h2">Разработка мобильного интерфейса</p>
-                        <p class="my-services__card-content_text text-p">Это процесс создания интерактивных элементов на
+                    <div>
+                        <picture>
+                            <sourse
+                                media="(max-width: 500px)"
+                                srcset="materials/services3-mobile.jpg"
+                            />
+                            <img class="my-services__card-img" src="materials/services3.jpg" alt="Верстка сайтов">
+                        </picture>
+                    </div>
+                    <div class="my-services__cards-content">
+                        <p class="my-services__card-content my-services__card-content_title text-h2">Разработка мобильного интерфейса</p>
+                        <p class="my-services__card-content my-services__card-content_text text-p">Это процесс создания интерактивных элементов на
                             странице с помощью JavaScript. Фронтенд
                             разработчик может помочь создать динамический и удобный пользовательский интерфейс для
                             вашего сайта или приложения.</p>
@@ -137,20 +174,30 @@
     <div class="container-full">
         <section class="contacts" id="contacts">
             <div class="container">
-                <div class="contacts__content">
-                    <h2 class="contacts__title">для связи:</h2>
-                <div class="contacts__sns"><a href="https://instagram.com/vetawhale?igshid=ZDdkNTZiNTM=">Instagram</a></div>
-                <div class="contacts__sns"><a href="https://t.me/VetaWhale">Telegram</a></div>
-                <div class="contacts__sns"><a href="mailto:veta-whale@yandex.ru">Email</a></div>
-                </div>
+                <form action="" class="contacts__form">
+                    <p class="contacts__form-title">Для связи со мной заполните простую форму</p>
+                    <input class="contacts__form-fio" type="fio" value="Имя Фамилия"><br>
+                    <input class="contacts__form-email" type="email"value="example@mail.com"><br>
+                    <input class="contacts__form-button" type="button" value="Отправить">
+                </form>
             </div>
         </section>
         <footer class="footer">
             <div class="container">
-                <p class="footer__text">Портфолио фронтенд-разработчика Елизаветы Шкимбовой</p>
-                <p class="footer__copyright">Все права защищены. 2023</p>
+                <div class="footer__contacts">
+                    <p class="footer__text">Портфолио фронтенд-разработчика Елизаветы Шкимбовой</p>
+                    <div class="contacts__content">
+                        <div class="contacts__sns"><a href="https://instagram.com/vetawhale?igshid=ZDdkNTZiNTM=">Instagram</a></div>
+                        <div class="contacts__sns"><a href="https://t.me/VetaWhale">Telegram</a></div>
+                        <div class="contacts__sns"><a href="mailto:veta-whale@yandex.ru">Email</a></div>
+                    </div>
+                </div> 
+                <div class="footer__copyright">
+                    <p class="footer__copyright-content">Все права защищены. 2023</p>
+                    <p class="contacts__text">политика обработки данных</p>
+                </div>
             </div>
-    </div>
+        </div>
     </footer>
 <script src="index.js"></script>
 </body>

@@ -1,0 +1,85 @@
+/* Стили для раздела навыков */
+
+.container__my-skills {
+}
+
+.my-skills {
+    margin: 150px 0;
+}
+
+.my-skills__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-skills__card {
+    margin-top: 60px;
+    width: calc(50% - 23px);
+}
+
+.my-skills__card_icon {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--accent-color);
+    width: 45px;
+    height: 44px;
+    border-radius: 5px;
+}
+
+.my-skills__card_title-content {
+    margin-top: 13px;
+    color: var(--accent-color);
+}
+
+.my-skills__card_title-content:hover {
+    margin-top: 13px;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* .my-skills__card_title-content.open::after,
+.my-skills__card_title-content.close::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../materials/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+}
+
+.my-skills__card_title-content.close+.my-skills__card_text-content {
+    display: none;
+
+}
+
+.my-skills__card_title-content.open::after {
+    transform: none;
+}
+
+.my-skills__card_title-content.close::after {
+    transform: rotate(180deg);
+}
+*/
+.my-skills__card_text-content {
+    margin-top: 16px;
+}
+/* Адаптив для блока навыков */
+
+@media only screen and (max-width: 1199px) {
+    .my-skills__card {
+        margin-top: 40px;
+        width: calc(50% - 18px);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .my-skills {
+        margin-top: 130px;
+        margin-bottom: 100px;
+    }
+    .my-skills__card {
+        width: 100%;
+    }
+}

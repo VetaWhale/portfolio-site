@@ -1,0 +1,77 @@
+/* Стили для шапки сайта */
+.header {
+    background-image: url(../materials/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 765px;
+    position: relative;
+}
+
+.menu {
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__logo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 55px;
+    letter-spacing: -0.11em;
+    text-transform: uppercase;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 0 12px;
+}
+
+.menu__logo a {
+    color: var(--accent-color);
+
+}
+
+.menu__nav a {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.menu__nav a:first-child {
+    margin-left: 0;
+}
+
+.menu__nav a:hover {
+    color: var(--accent-color);
+}
+
+.info {
+    position: absolute;
+    bottom: 88px;
+}
+
+.info__text-content {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.info__text-title {
+    margin-top: 29px;
+    color: var(--accent-color);
+}
+
+/* Адаптив для блока шапки */
+
+@media only screen and (max-width: 1199px) {
+    .info {
+        bottom: 60px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 716px;
+    }
+    .info__text-content {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}

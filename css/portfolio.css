@@ -1,0 +1,109 @@
+/* Стили для секции портфолио*/
+.portfolio {
+  padding-top: 150px;
+}
+
+.portfolio__cards {
+  margin-top: 40px;
+}
+
+.portfolio-card {
+  height: 550px;
+  border-radius: 30px;
+  position: relative;
+}
+.portfolio-card.close {
+  display: none;
+}
+.portfolio-card__subtitle {
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  padding: 10px 20px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 100px;
+}
+
+.portfolio-card:first-child {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../materials/portfolio-metrica.png);
+}
+
+.portfolio-card:nth-child(2) {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../materials/portfolio-splice.png);
+}
+
+.portfolio-card:nth-child(3) {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../materials/portfolio-qubit.png);
+}
+.portfolio-card:nth-child(4) {
+  background-image: url(../materials/portfolio-realhome.jpg);
+}
+.portfolio-card:nth-child(5) {
+  background-image: url(../materials/portfolio-glass.jpg);
+}
+
+.portfolio-card__text-title {
+  padding-top: 410px;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.portfolio-card__text-title:hover {
+  color: var(--accent-color);
+}
+
+.portfolio-card__text-content {
+  margin-top: 5px;
+  margin-left: 50px;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: lowercase;
+}
+
+.portfolio-card__button {
+  margin-top: 79px;
+  font-size: 30px;
+  line-height: 39px;
+  background-color: var(--accent-color);
+  color: #000;
+  padding: 57px 118px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+}
+
+.portfolio-card__button:hover {
+  background-color: #000;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+/* Адаптив для блока портфолио */
+
+@media only screen and (max-width: 1199px) {
+  .portfolio-card {
+    height: 445px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .portfolio {
+    padding-top: 100px;
+  }
+  .portfolio-card__button {
+    width: 100%;
+  }
+}

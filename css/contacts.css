@@ -1,0 +1,113 @@
+/* Стили для раздела контакты */
+
+.contacts {
+  margin: 150px 0;
+  background-color: var(--dark-color);
+  border-radius: 30px;
+  background-image: url(../materials/contacts.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 717px;
+  color: #fff;
+  position: relative;
+}
+.contacts__form {
+  width: calc(50% - 50px);
+  font-size: 22px;
+}
+.contacts__form-title {
+  padding-top: 100px;
+  max-width: 550px;
+  font-size: 60px;
+  line-height: 60px;
+}
+.contacts__form-fio,
+.contacts__form-email {
+  padding-left: 40px;
+  width: 100%;
+  line-height: 60px;
+  border: 1px solid #3b3d3b;
+  border-radius: 100px;
+  background-color: #3b3d3b;
+  color: #fff;
+}
+.contacts__form-fio {
+  margin-top: 60px;
+}
+.contacts__form-email {
+  margin-top: 26px;
+}
+.contacts__form-button {
+  margin-top: 60px;
+  line-height: 70px;
+  width: 80%;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+.contacts__form-button:hover {
+  background-color: var(--dark-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Адаптив для блока контактов */
+
+@media only screen and (max-width: 1199px) {
+  .contacts {
+    height: 484px;
+  }
+  .contacts__form {
+    width: calc(40% - 50px);
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 52px;
+  }
+  .contacts__form-title {
+    padding-top: 50px;
+    max-width: 370px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .contacts__form-fio,
+  .contacts__form-email {
+    line-height: 40px;
+    padding-left: 24px;
+  }
+  .contacts__form-fio {
+    margin-top: 40px;
+  }
+  .contacts__form-email {
+    margin-top: 17px;
+  }
+  .contacts__form-button {
+    margin-top: 40px;
+    line-height: 47px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contacts {
+    background-image: none;
+    border-radius: 0;
+  }
+  .contacts__form-title {
+    font-size: 35px;
+    line-height: 37px;
+  }
+  .contacts__form {
+    font-size: 15px;
+    line-height: 20px;
+    width: 90%;
+    padding-left: 0;
+  }
+  .contacts__form-fio,
+  .contacts__form-email {
+    line-height: 38px;
+    padding-left: 21px;
+  }
+  .contacts__form-button {
+    line-height: 43px;
+    width: 106%;
+  }
+}

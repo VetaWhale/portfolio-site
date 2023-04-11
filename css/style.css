@@ -1,3 +1,10 @@
+@import url(../css/header.css);
+@import url(../css/portfolio.css);
+@import url(../css/my-skills.css);
+@import url(../css/my-services.css);
+@import url(../css/contacts.css);
+@import url(../css/footer.css);
+
 /* Основные настройки стилей */
 html {
     scroll-behavior: smooth;
@@ -54,7 +61,8 @@ a {
     --dark-color: #191c19;
 }
 
-button {
+button,
+input {
     font-family: 'IBM Plex Mono', monospace;
     font-style: normal;
     font-weight: 400;
@@ -65,319 +73,42 @@ button {
     width: 1150px;
     margin: 0 auto;
 }
-
-/* Стили для шапки сайта */
-.header {
-    background-image: url(../materials/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 765px;
-    position: relative;
-}
-
-.menu {
-    padding-top: 27px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu__logo {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 55px;
-    letter-spacing: -0.11em;
-    text-transform: uppercase;
-    background-color: #000;
-    border: 1px solid #000;
-    border-radius: 100px;
-    padding: 0 12px;
-}
-
-.menu__logo a {
-    color: var(--accent-color);
-
-}
-
-.menu__nav a {
-    color: #fff;
-    margin-left: 50px;
-}
-
-.menu__nav a:first-child {
-    margin-left: 0;
-}
-
-.menu__nav a:hover {
-    color: var(--accent-color);
-}
-
-.info {
-    position: absolute;
-    bottom: 88px;
-}
-
-.info__text-content {
-    font-size: 20px;
-    line-height: 26px;
-}
-
-.info__text-title {
-    margin-top: 29px;
-    color: var(--accent-color);
-}
-
-/* Стили для секции портфолио*/
-.portfolio {
-    padding-top: 150px;
-}
-
-.portfolio__cards {
-    margin-top: 40px;
-}
-
-.portfolio-card {}
-
-.portfolio-card__metrica {
-    height: 550px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../materials/portfolio-metrica.png);
-    border-radius: 30px;
-}
-
-.portfolio-card__splice {
-    height: 550px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../materials/portfolio-splice.png);
-    border-radius: 30px;
-}
-
-.portfolio-card__qubit {
-    height: 550px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../materials/portfolio-qubit.png);
-    border-radius: 30px;
-}
-
-.portfolio-card__text-title {
-    padding-top: 410px;
-    margin-left: 50px;
-    color: #fff;
-}
-
-.portfolio-card__text-title:hover {
-    color: var(--accent-color);
-}
-
-.portfolio-card__text-content {
-    margin-top: 5px;
-    margin-left: 50px;
-    font-size: 30px;
-    line-height: 39px;
-    text-transform: lowercase;
-}
-
-.portfolio-card__button {
-    margin-top: 79px;
-    font-size: 30px;
-    line-height: 39px;
-    background-color: var(--accent-color);
-    color: #000;
-    padding: 57px 118px;
-    border: 1px solid var(--accent-color);
-    border-radius: 10px;
-}
-
-.portfolio-card__button:hover {
-    background-color: #000;
-    color: var(--accent-color);
-    cursor: pointer;
-}
-
-/* Стили для раздела навыков */
-
-.container__my-skills {
-    max-width: 778px;
-}
-
-.my-skills {
-    margin: 150px 0;
-}
-
-.my-skills__cards {}
-
-.my-skills__card:nth-child(2) {
-    margin-top: 48px;
-}
-
-.my-skills__card {
-    margin-top: 60px;
-}
-
-.my-skills__card_icon {
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: var(--accent-color);
-    width: 45px;
-    height: 44px;
-    border-radius: 5px;
-}
-
-.my-skills__card_title-content {
-    margin-top: 13px;
-}
-
-.my-skills__card_title-content:hover {
-    margin-top: 13px;
-    color: var(--accent-color);
-    cursor: pointer;
-}
-
-.my-skills__card_title-content.open::after,
-.my-skills__card_title-content.close::after {
-    content: "";
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: url(../materials/arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 15px;
-}
-
-.my-skills__card_title-content.close+.my-skills__card_text-content {
-    display: none;
-
-}
-
-.my-skills__card_title-content.open::after {
-    transform: none;
-}
-
-.my-skills__card_title-content.close::after {
-    transform: rotate(180deg);
-}
-
-.my-skills__card_text-content {
-    margin-top: 16px;
-}
-
-/* Стили для раздела услуг*/
-
-.my-services {}
-
-.my-services__cards {}
-
-.my-services__title {
-    margin-bottom: 74px;
-    font-size: 35px;
-    line-height: 46px;
-}
-
-.my-services__card {}
-
-.my-services__card-img img {
-    border-radius: 30px;
-}
-
-.my-services__card-content {
-    padding: 40px 0 40px 40px;
-    border: 1px solid #191c19;
-    border-radius: 30px;
-    background-color: #191c19;
-}
-
-.my-services__card:nth-child(2) {
-    margin-bottom: 74px;
-}
-
-.my-services__card:nth-child(3) {
-    margin-bottom: 137px;
-}
-
-.my-services__card-content_title {
-    color: var(--accent-color);
-}
-
-.my-services__card-content_text {
-    margin-top: 15px;
-    max-width: 750px;
-}
-
-/* Стили для раздела контакты */
 .container-full {
-    margin: 0 auto;
-    width: 1400px;
+    width: 100%;
 }
-
-.contacts {
-    margin: 150px 0;
-    background-color: var(--dark-color);
-    border-radius: 30px;
-    background-image: url(../materials/contacts.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 717px;
-    color: #fff;
-    position: relative;
+@media only screen and (max-width: 1199px) {
+    .text-h1 {
+        font-size: 60px;
+    }
+    .text-h2 {
+        font-size: 45px;
+        line-height: 58px;
+    }
+    .text-h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .text-p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
-
-.contacts__content {
-    position: absolute;
-    bottom: 90px;
-}
-
-.contacts__title {
-    font-size: 35px;
-}
-
-.contacts__sns:not(:first-child) {
-    margin-top: 20px;
-}
-.contacts__sns::before{
-    content: "";
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-image: url(../materials/icons8-instagram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-right: 20px;
-}
-.contacts__sns:nth-child(3)::before {
-    background-image: url(../materials/icons8-телеграм.svg);
-}
-.contacts__sns:nth-child(4)::before {
-    background-image: url(../materials/icons8-почта.svg);
-}
-.contacts__sns a {
-    color: #fff;
-    text-transform: lowercase;
-    font-size: 60px;
-    line-height: 60px;
-}
-
-.contacts__sns a:hover {
-    color: var(--accent-color);
-}
-
-/* Стили для раздела футера */
-.footer {
-    background-color: #fff;
-    border-radius: 30px 30px 0 0;
-    font-family: 'Manrope', sans-serif;
-}
-
-.footer__text {
-    padding-top: 76px;
-    font-size: 22px;
-    line-height: 30px;
-    color: #000;
-}
-
-.footer__copyright {
-    margin-top: 68px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    line-height: 27px;
-    color: #000;
-    opacity: 0.5;
+@media only screen and (max-width: 767px) {
+    .text-h1 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .text-h2 {
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .container {
+        padding-left: 13px;
+        padding-right: 12px;
+    }
 }
