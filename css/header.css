@@ -92,7 +92,7 @@
 }
 .burger-menu__logo {
   padding: 5px 10px;
-  width: 150px;
+  width: 165px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 32px;
@@ -128,7 +128,7 @@
   line-height: 22px;
   opacity: 0.5;
 }
-.burger-contacts__sns a{
+.burger-contacts__sns a {
   color: #fff;
   font-size: 20px;
   line-height: 40px;
@@ -152,13 +152,13 @@
   }
   .burger-btn_open {
     background: url(../materials/burger-close.svg) no-repeat;
-    width: 34px;
-    height: 34px;
+    
   }
 }
 @media only screen and (max-width: 767px) {
   .header {
     height: 716px;
+    background-image: url(../materials/header-mobile.jpg);
   }
   .info__text-content {
     font-size: 15px;

@@ -22,13 +22,13 @@ function toggleBurger() {
     bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
     burgerBtnNode.classList.toggle(BURGER_BTN_OPENED_CLASSNAME);
 }
-
+/*
 const cells = document.querySelectorAll('.portfolio-card');
 const button = document.querySelector('.portfolio-card__button')
 
     for(let cell of cells) {
         button.addEventListener('click', function() {
-                if (cell.classList.contains('close')) {
+                if (cell.toggle.contains('close')) {
                     cell.classList.remove('close')
                     button.innerHTML = "Скрыть";
                 } else {
@@ -37,3 +37,4 @@ const button = document.querySelector('.portfolio-card__button')
                 }
             });
         }
+        */
