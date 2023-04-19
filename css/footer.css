@@ -72,12 +72,12 @@
   .footer__contacts {
     padding-top: 47px;
     flex-direction: column;
-    column-gap: 20px;
+    gap: 20px;
   }
   .footer__copyright {
     margin-top: 40px;
     flex-direction: column;
-    column-gap: 14px;
+    gap: 14px;
   }
   .footer__copyright-content {
     margin-top: 0;

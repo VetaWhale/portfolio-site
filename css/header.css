@@ -1,8 +1,9 @@
 /* Стили для шапки сайта */
 .header {
-  background-image: url(../materials/header.jpg);
+  background-image: url(../materials/portfolio-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 765px;
   position: relative;
 }
@@ -158,7 +159,8 @@
 @media only screen and (max-width: 767px) {
   .header {
     height: 716px;
-    background-image: url(../materials/header-mobile.jpg);
+    background-image: url(../materials/portfolio-img-mobile.jpg);
+    background-position: top;
   }
   .info__text-content {
     font-size: 15px;

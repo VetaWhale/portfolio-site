@@ -70,10 +70,10 @@
 .portfolio-card__button {
   margin-top: 79px;
   font-size: 30px;
-  line-height: 39px;
+  line-height: 153px;
   background-color: var(--accent-color);
   color: #000;
-  padding: 57px 118px;
+  width: 50%;
   border: 1px solid var(--accent-color);
   border-radius: 10px;
 }
@@ -88,6 +88,9 @@
   .portfolio-card {
     height: 445px;
   }
+  .portfolio-card__button {
+    line-height: 124px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .portfolio {
@@ -96,6 +99,6 @@
   .portfolio-card__button {
     width: 100%;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 80px;
   }
 }
