@@ -1,13 +1,12 @@
 /* Стили для шапки сайта */
 .header {
-  background-image: url(../materials/header-img.jpg);
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../materials/header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 765px;
   position: relative;
 }
-
 .menu {
   padding-top: 27px;
   display: flex;
@@ -165,7 +164,7 @@
 @media only screen and (max-width: 767px) {
   .header {
     height: 716px;
-    background-image: url(../materials/header-img-mobile.jpg);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../materials/header-img-mobile.jpg);
     background-position: top;
   }
   .info__text-content {
